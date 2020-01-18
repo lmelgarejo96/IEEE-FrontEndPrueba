@@ -1,15 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
+    </div> -->
     <router-view/>
+    <!-- <p>{{ user }}</p> -->
   </div>
 </template>
 
-<style lang="scss">
-#app {
+<script>
+/* import { mapState, mapActions } from 'vuex' */
+export default {
+  data() {
+    return {
+      /* user: {} */
+    }
+  },
+  computed: {
+   /*  ...mapState(['User']) */
+  },
+  methods: {
+    /* ...mapActions(['getLogin']),
+    async Login () {
+      const res = await this.getLogin();
+      this.user = res.data
+    } */
+  },
+  /* mounted () {
+    this.Login()
+  } */
+}
+</script>
+
+<style>
+/* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,5 +53,5 @@
       color: #42b983;
     }
   }
-}
+} */
 </style>
